@@ -1,3 +1,2 @@
-# Final_OIR
-this is final OIR Website
-OIR
+# OIR_Web
+Website for Office of International Relations IITK

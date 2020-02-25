@@ -1,0 +1,32 @@
+/* dropright submenu */
+header .navbar .dropright .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+}
+
+header .navbar .dropright .dropdown-menu:before {
+    bottom: 80%;
+    left: -10%;
+    transform: rotate(-90deg);
+}
+
+.submenu-toggle > .submenu {
+    display: none;
+} 
+
+.submenu-toggle:hover > .submenu {
+    display: block;
+}
+
+
+/* multicolumn */
+header .navbar .dropdown-menu .row ul {
+    list-style: none !important;
+}
+
+@media(min-width: 23rem) {
+    header .navbar .dropdown-menu .row {
+        width: max-content;
+    }
+}
