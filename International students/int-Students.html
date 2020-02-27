@@ -20,51 +20,69 @@
     <link rel="stylesheet" href="../css/style.css">
     <!--Page style-->
     <link rel="stylesheet" href="../css/custom/main_link_page.css">
+    <link rel="stylesheet" href="../css/custom/navigation.css">
+
   </head>
 
   <body>
-    <header role="banner">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-          <div class="container" id="me">
-            <img src="../images/redlogo.jpg" alt="IIT kanpur" style="width:40px;height:40px;">
-            <a class="navbar-brand absolute" href="../index.html">IIT Kanpur</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-              <ul class="navbar-nav nav-pills mx-auto ">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="../At IITK/atiitk.html">At IITK</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="../Faculty/faculty.html">Faculty</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="../IITK Students/iitkstudents.html">IITK students</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link active" href="#">International students</a>
-                </li>               
-                <li class="nav-item">
-                  <a class="nav-link" href="../Mou.html">MoU's</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../contact_us.html">Contact Us</a>
-                </li>
-                <li class ="nav-item dropdown">
-                  <button class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" style="margin-top:20px;" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
-                  <ul class="dropdown-menu" aria-labelledby="btn1">
-                    <li><a href="http://iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
-                    <li><a href="#" target="_blank" class="dropdown-item">How to apply</a></li>
-                    <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
-                  </ul>
-                </li>
-            </div>
+    <header class="navigation">
+
+      <nav class="nav" >
+        <div class="nav__heading">
+          <img class="nav__heading-logo" src="../images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
+          <a class="nav__heading-text" href="../index.html">OFFICE OF INTERNATIONAL RELATIONS</a>
+        </div>
+        
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="../At IITK/atiitk.html">At IITK</a></li class="nav__item">
+          <li class="nav__item"><a class="nav__link" href="../IITK Students/iitkstudents.html">Students</a></li>
+          <li class="nav__item"><a class="nav__link" href="../International students/int-Students.html">International students</a></li>
+          <li class="nav__item"><a class="nav__link" href="../Faculty/faculty.html">Faculty</a></li>
+          <li class="nav__item"><a class="nav__link" href="../Mou.html">Mou's</a></li>
+          <li class="nav__item"><a class="nav__link" href="../contact_us.html">Contact us</a></li>
+        </ul>
+  
+        <div class="nav__dropdown">
+          <div class="nav__dropdown dropdown">
+            <button class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
+            <ul class="dropdown-menu" aria-labelledby="btn1">
+              <li><a href="http://iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
+              <li><a href="#" target="_blank" class="dropdown-item">How to apply</a></li>
+              <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
+  
+      <nav class="nav-2">
+        <div class="nav-2__heading">
+          <img class="nav-2__heading-logo" src="../images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
+          <a class="nav-2__heading-text" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
+        </div> 
+        <input type="checkbox" class="sidebar__checkbox" id="sidebar-toggle">
+        <label for="sidebar-toggle" class="sidebar__button">
+            <span class="sidebar__icon">&nbsp;</span>
+        </label>
+        <div class="sidebar">
+          <div class="sidebar__view">
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="../At IITK/atiitk.html">At IITK</a></li class="nav__item">
+                <li class="sidebar__item"><a class="sidebar__link" href="../IITK Students/iitkstudents.html">Students</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="../International students/int-Students.html">International students</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="../Faculty/faculty.html">Faculty</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="../Mou.html">Mou's</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="../contact_us.html">Contact us</a></li>
+              <li class="ql__heading">
+                <a class="ql__link">Quick links</a>
+                <span class="ql__arrow">&uarr;</span>
+              </li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">IITK website</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">How to apply</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <div class="container-fluid">
         <div class="row">
@@ -89,16 +107,17 @@
                                 </li>
                             </ul>
                             <li>
-                            <a href="">Programs</a>
+                            <a href="#">Programs</a>
+                            <!--to be added-->
                             </li>
                             <li>
-                                <a href="">Academic departments</a>
+                                <a href="../department.html">Academic departments</a>
                             </li>
                             <li>
                                 <a href="../opinions.html" target="_blank">Inbound Student opinions</a>
                             </li>
                             <li>
-                                <a href= "">Application Portal</a>
+                                <a href="#">Application Portal</a>
                             </li>
                             
                         </ul>
@@ -128,22 +147,22 @@
                       IITK welcomes you on your new journey to study, explore and learn. Foreign nationals can either apply for Degree Programs (Master/Doctoral) or Non-Degree Programs (Course work / Research not leading to a degree) here. Admission into IIT Kanpur's undergraduate programs is conducted by the Joint Admission Board. </p>
                 </section>
                 <section class="divider">
-                    <a href="" target="_blank"><img src= "../images/academics.jpg" alt="image" float="float-md-left"></a>
-                    <h3><a href="" target="_blank">How to Apply</a></h3>
+                    <a href="../howToApply.html" target="_blank"><img src= "../images/academics.jpg" alt="image" float="float-md-left"></a>
+                    <h3><a href="../howToApply.html" target="_blank">How to Apply</a></h3>
                     <p>Information regarding how to apply to IITK at first and other info.</p>
-                    <a href="" target="_blank">Learn More...</a>
+                    <a href="../howToApply.html" target="_blank">Learn More...</a>
                 </section>
                 <section class="divider">
-                    <a href="" target="_blank"><img src= "../images/brochure.jpg" alt="image" float="float-md-left"></a>
-                    <h3><a href="" target="_blank">Preparation before arrival</a></h3>
+                    <a href="../PrepForArr.html" target="_blank"><img src= "../images/brochure.jpg" alt="image" float="float-md-left"></a>
+                    <h3><a href="../PrepForArr.html" target="_blank">Preparation before arrival</a></h3>
                     <p>What things to do before coming to IITK?</p>
-                    <a href="" target="_blank">Learn More...</a>
+                    <a href="../PrepForArr.html" target="_blank">Learn More...</a>
                 </section>
                 <section class="divider">
-                    <a href="" target="_blank"><img src= "../images/visa.jpg" alt="image" float="float-md-left"></a>
-                    <h3><a href="" target="_blank">Visa and registration</a></h3>
+                    <a href="../Visa.html" target="_blank"><img src= "../images/visa.jpg" alt="image" float="float-md-left"></a>
+                    <h3><a href="../Visa.html" target="_blank">Visa and registration</a></h3>
                     <p>Know about how to apply for visa and more details.</p>
-                    <a href="" target="_blank">Learn More...</a>
+                    <a href="../Visa.html" target="_blank">Learn More...</a>
                 </section>
                 <section class="divider">
                     <a href="" target="_blank"><img src= "../images/academics.jpg" alt="image" float="float-md-left"></a>
@@ -152,10 +171,10 @@
                     <a href="" target="_blank">Learn More...</a>
                 </section>
                 <section class="divider">
-                    <a href="" target="_blank"><img src= "../images/academics.jpg" alt="image" float="float-md-left"></a>
-                    <h3><a href="" target="_blank">Academic Departments</a></h3>
+                    <a href="../department.html" target="_blank"><img src= "../images/academics.jpg" alt="image" float="float-md-left"></a>
+                    <h3><a href="../department.html" target="_blank">Academic Departments</a></h3>
                     <p>The details of each and every department of IITK</p>
-                    <a href="" target="_blank">Learn More...</a>
+                    <a href="../department.html" target="_blank">Learn More...</a>
                 </section>
                 <section class="divider">
                     <a href="../opinions.html" target="_blank"><img src= "../images/person_1.jpg" alt="image" float="float-md-left"></a>
