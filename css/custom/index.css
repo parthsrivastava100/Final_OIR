@@ -81,3 +81,7 @@ body {
   width: 100%;
 }
 
+#video-frame{
+  z-index : 500;
+}
+
