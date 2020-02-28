@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  padding-top: 50px;
   background: #fff;
   font-family: "Rubik", arial, sans-serif;
   font-weight: 300;

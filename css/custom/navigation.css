@@ -12,6 +12,7 @@ html,body {
   height: 4rem;
   background-color: #fff !important;
   box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
 }
 
 .nav, .nav-2 {
@@ -44,7 +45,7 @@ html,body {
 }
 
 .nav__list {
-  margin-bottom: 0;
+  margin-bottom: 0px;
   display: grid;
   grid-template-columns: repeat(6,max-content);
   grid-column-gap: 1.2rem;
