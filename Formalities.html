@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom/navigation.css">
 
 
     <style>
@@ -118,52 +119,76 @@
     <!-- Start header 
     ====================================================================================================-->
     
-    <header role="banner">
-        <img class="img-fluid mx-auto my-2 d-block" src="images/Header-mhrd-iitk.png" alt="OIR logo" style="margin-top: 40px;;">
+    <header class="navigation">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <!-- <img src="images/redlogo.jpg" alt="IIT kanpur" style="width:30px;height:30px;"> -->
-          <a style="color:black;letter-spacing:.1em; font-weight:400;" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav class="nav d-flex justify-content-around pt-2" >   
+        <div class="nav__heading">
+          <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
+          <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
+        </div>
+        <div class="nav__dropdown">
+          <div class="nav__dropdown dropdown">
+            <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
+            <ul class="dropdown-menu" aria-labelledby="btn1">
+              <li><a href="http://iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
+              <li><a href="../howToApply.html" target="_blank" class="dropdown-item">How to apply?</a></li>
+              <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+              <li><a href="../Mou.html" target="_blank" class="dropdown-item">MoUs</a></li>
+              <li><a href="#" target="_blank" class="dropdown-item">FAQs</a></li>
+              <li><a href="../contact_us.html" target="_blank" class="dropdown-item">Contact us</a></li>
 
-          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item ">
-                <a class="nav-link active" href="">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.iitk.ac.in/doaa/academic-departments">Departments</a>
-              </li>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Resources</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="https://www.iitk.ac.in/oir/preparing-for-arrival" class target="_blank">Preparing for arrival</a>
-                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=Yq-vTT-fHtk" class target="_blank">Student Campus Life</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PG admissions</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown05">
-                    <a class="dropdown-item" href="http://iitk.ac.in/asean/data/Information%20Brochure-Sep25-01-10-19.pdf" class target="_blank">PG admission manual</a>
-                    <a class="dropdown-item" href="http://iitk.ac.in/asean/data/Eligibility_PhD_ASEAN_fellowship-03-10-19.pdf" class target="_blank">Eligibility Requirements</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.iitk.ac.in/oir/contact-us">Contact</a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
 
+      <nav class="nav d-flex justify-content-around" >
+        <ul class="nav__list d-flex justify-content-center">
+          <li class="nav__item"><a class="nav__link" href="At IITK/atiitk.html">At IITK</a></li class="nav__item">
+          <li class="nav__item"><a class="nav__link" href="IITK Students/iitkstudents.html">Students</a></li>
+          <li class="nav__item"><a class="nav__link" href="International students/int-Students.html">International students</a></li>
+          <li class="nav__item"><a class="nav__link" href="Faculty/faculty.html">Faculty</a></li>
+          <li class="nav__item"><a class="nav__link" href="Mou.html">Mou's</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact_us.html">Contact us</a></li>
+        </ul>  
+      </nav>
+
+      <nav class="nav-2">
+        <div class="nav-2__heading">
+          <img class="nav-2__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
+          <a class="nav-2__heading-text" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
+        </div>
+  
+        <input type="checkbox" class="sidebar__checkbox" id="sidebar-toggle">
+        <label for="sidebar-toggle" class="sidebar__button">
+            <span class="sidebar__icon">&nbsp;</span>
+        </label>
+        <div class="sidebar">
+          <div class="sidebar__view">
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="At IITK/atiitk.html">At IITK</a></li class="nav__item">
+                <li class="sidebar__item"><a class="sidebar__link" href="IITK Students/iitkstudents.html">Students</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="International students/int-Students.html">International students</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="Faculty/faculty.html">Faculty</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="Mou.html">Mou's</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="contact_us.html">Contact us</a></li>
+              <li class="ql__heading">
+                <a class="ql__link">Quick links</a>
+                <span class="ql__arrow">&uarr;</span>
+              </li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="http://iitk.ac.in">IITK website</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="howToApply.html">How to apply?</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="Mou.html">MoUs</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">FAQs</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" href="contact_us.html">Contact us</a></li>
+
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+  
     </header>
     <div id ="Thecarousel" class= "carousel slide" data-ride ="carousel">
         <ol class="carousel-indicators">
@@ -219,13 +244,8 @@
                         <a href="Health_Certificate.doc" download style="color: grey;">Health Fitness Form (required only if you do not have health insurance)</a>
                     </li>
                     <li>
-<<<<<<< HEAD
-                      <a href="Permit.pdf" download style="color: grey;">Residential Permit Form (the IR office will work on this with you)</a>
-                    </li>
-=======
                         <a href="Permit.pdf" download style="color: grey;">Residential Permit Form (the IR office will work on this with you)</a>
                          </li>
->>>>>>> ac315b0ea169eccd2a45b3d3a65caf47fb5d71d6
                 </ul>
                   </div>
                   </div></div>
@@ -284,6 +304,7 @@
       <script src="js/jquery.stellar.min.js"></script>
       <script src="js/jquery.animateNumber.min.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/custom/navigation.js"></script>
   
     </body>
   
