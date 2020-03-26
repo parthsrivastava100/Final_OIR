@@ -8,7 +8,7 @@ header .navbar .dropright .dropdown-menu {
 header .navbar .dropright .dropdown-menu:before {
     bottom: 80%;
     left: -10%;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 
 .submenu-toggle > .submenu {
