@@ -1,6 +1,6 @@
+var tablenum = 1;
 function sortTable(n,numb) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-
     if(numb == 1)table = document.getElementById("tb1");
     else if(numb==2)table = document.getElementById("tb2");
     else if(numb==3)table = document.getElementById("tb3");
@@ -60,6 +60,7 @@ function sortTable(n,numb) {
   }
 
   function change(n){
+    tablenum = n;
     console.log("reached");
     var table,id;
     if(n==1)id = "tb1";
@@ -82,7 +83,12 @@ function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("tb1");
+  // table = document.getElementById("tb1");
+  if(tablenum==1)table = document.getElementById("tb1");
+  if(tablenum==2)table = document.getElementById("tb2");
+  if(tablenum==3)table = document.getElementById("tb3");
+  if(tablenum==4)table = document.getElementById("tb4");
+  if(tablenum==5)table = document.getElementById("tb5");
   tr = table.getElementsByTagName("tr");
 
   // Loop through all table rows, and hide those who don't match the search query
