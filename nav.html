@@ -1,5 +1,7 @@
-<div class="wrapper">
-  <div class="multi_color_border"></div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div class="wrapper" id="vue_use">
+  
+  
   <div class="top_nav">
     <a href="index.html">
       <div class="left">
@@ -24,12 +26,14 @@
       <!-- <div class="nav__dropdown dropdown"> -->
         <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
         <ul class="dropdown-menu" aria-labelledby="btn1">
-          <li><a href="http://iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
-          <li><a href="../howToApply.html" target="_blank" class="dropdown-item">How to apply?</a></li>
-          <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
-          <li><a href="../Mou.html" target="_blank" class="dropdown-item">MoUs</a></li>
-          <li><a href="#" target="_blank" class="dropdown-item">FAQs</a></li>
-          <li><a href="../contact_us.html" target="_blank" class="dropdown-item">Contact us</a></li>
+          <ul class="dropdown-menu" aria-labelledby="btn1">
+            <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+            <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+            <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+            <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+            <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+            <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+          </ul>
         </ul>
       </div>
   </div>
@@ -37,14 +41,15 @@
   <div class="bottom_nav">
     <ul>
       <!-- <li><a id="len1" class="hoverable" href="#">Home</a></li> -->
-      <li><a id="len2" class="hoverable" href="At IITK/atiitk.html">At IITK</a></li>
-      <li><a id="len3" class="hoverable" href="IITK Students/iitkstudents.html">IITK students</a></li>
-      <li><a id="len4" class="hoverable" href="International students/int-Students.html">International Students</a></li>
-      <li><a id="len5" class="hoverable" href="Faculty/faculty.html">Faculty</a></li>
-      <li><a id="len6" class="hoverable" href="Mou.html">Mou's</a></li>
-      <li><a id="len7" class="hoverable" href="contact_us.html">Contact Us</a></li>
+      <li><a id="len2" class="hoverable" :href="atiitk">At IITK</a></li>
+      <li><a id="len3" class="hoverable" :href="iitks">IITK students</a></li>
+      <li><a id="len4" class="hoverable" :href="is">International Students</a></li>
+      <li><a id="len5" class="hoverable" :href="faculty">Faculty</a></li>
+      <li><a id="len6" class="hoverable" :href="mo">Mou's</a></li>
+      <li><a id="len7" class="hoverable" :href="contact">Contact Us</a></li>
     </ul>
   </div>   
+  <script src="main.js"></script>
 </div>
 
 

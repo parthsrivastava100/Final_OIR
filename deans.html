@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
@@ -25,37 +26,41 @@
   </head>
 
   <body style="display: flex; flex-direction: column; height: 100vh;">
+    <div id="vue_use">
     <header class="navigation">
-
+     
       <nav class="nav d-flex justify-content-around pt-2" >   
         <div class="nav__heading">
           <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
           <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
         </div>
+        
         <div class="nav__dropdown">
           <div class="nav__dropdown dropdown">
             <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
             <ul class="dropdown-menu" aria-labelledby="btn1">
-              <li><a href="http://iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
-              <li><a href="../howToApply.html" target="_blank" class="dropdown-item">How to apply?</a></li>
-              <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
-              <li><a href="../Mou.html" target="_blank" class="dropdown-item">MoUs</a></li>
-              <li><a href="#" target="_blank" class="dropdown-item">FAQs</a></li>
-              <li><a href="../contact_us.html" target="_blank" class="dropdown-item">Contact us</a></li>
-
+              <ul class="dropdown-menu" aria-labelledby="btn1">
+                <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+                <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+                <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+                <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+                <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+                <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+              </ul>
             </ul>
           </div>
         </div>
+      
       </nav>
 
       <nav class="nav d-flex justify-content-around" >
         <ul class="nav__list d-flex justify-content-center">
-          <li class="nav__item"><a class="nav__link" href="At IITK/atiitk.html">At IITK</a></li class="nav__item">
-          <li class="nav__item"><a class="nav__link" href="IITK Students/iitkstudents.html">Students</a></li>
-          <li class="nav__item"><a class="nav__link" href="International students/int-Students.html">International students</a></li>
-          <li class="nav__item"><a class="nav__link" href="Faculty/faculty.html">Faculty</a></li>
-          <li class="nav__item"><a class="nav__link" href="Mou.html">Mou's</a></li>
-          <li class="nav__item"><a class="nav__link" href="contact_us.html">Contact us</a></li>
+          <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
+          <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
+          <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
+          <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
+          <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
+          <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
         </ul>  
       </nav>
 
@@ -72,31 +77,31 @@
         <div class="sidebar">
           <div class="sidebar__view">
             <ul class="sidebar__list">
-                <li class="sidebar__item"><a class="sidebar__link" href="At IITK/atiitk.html">At IITK</a></li class="nav__item">
-                <li class="sidebar__item"><a class="sidebar__link" href="IITK Students/iitkstudents.html">Students</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="International students/int-Students.html">International students</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="Faculty/faculty.html">Faculty</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="Mou.html">Mou's</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="contact_us.html">Contact us</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" :href="atiitk">At IITK</a></li class="nav__item">
+                <li class="sidebar__item"><a class="sidebar__link" :href="iitks">Students</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" :href="is">International students</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" :href="faculty">Faculty</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" :href="mo">Mou's</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
               <li class="ql__heading">
                 <a class="ql__link">Quick links</a>
                 <span class="ql__arrow">&uarr;</span>
               </li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" href="http://iitk.ac.in">IITK website</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" href="howToApply.html">How to apply?</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="iitk">IITK website</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="apply">How to apply?</a></li>
                 <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" href="Mou.html">MoUs</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">FAQs</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" href="contact_us.html">Contact us</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="mo">MoUs</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="fa">FAQs</a></li>
+                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
 
             </ul>
           </div>
           
         </div>
       </nav>
-  
+    
     </header>
-  
+    <br/><br/><br/>
 
     <div class="container" style="margin-top: 6rem">  
       <h4 class="display-4 mb-auto text-uppercase text-center border-bottom" style="color: #11cbd7">Deans</h1>
@@ -176,51 +181,49 @@
 
       <!--FOOTER-->
       <footer class="site-footer">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-              <h3 class="heading">About OIR IITK</h3>
-              <p>The Office Of International Relations works to promote the exchange of ideas, culture and knowledge overseas</p>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" > 
-              <h3 class="heading">Quick Links</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="list-unstyled">
-                    <li><a href="http://iitk.ac.in" style="color:rgb(65, 183, 230);">IITK website</a></li>
-                    <!-- <li><a href="https://www.iitk.ac.in/oir/" style="color:rgb(65, 183, 230);">OIR website</a></li> -->
-                    <li><a href="howToApply.html" style="color:rgb(65, 183, 230);">How To Apply?</a></li>
-                    <li><a href="#" style="color:rgb(65, 183, 230);">Application Portal</a></li>
-                    <li><a href="Mou.html" style="color:rgb(65, 183, 230);">MoUs</a></li>
-                    <li><a href="#" style="color:rgb(65, 183, 230);">FAQs</a></li>
-                    <li><a href="contact_us.html" style="color:rgb(65, 183, 230);">Contact us</a></li>
-  
-                  </ul>
+        
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" style="margin-right:115px; margin-left:65px;">
+                <h3>About OIR IITK</h3>
+                <p>The Office Of International Relations works to promote the exchange of ideas,culture and knowledge overseas.</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" style="margin-right:55px;">
+                <h3 class="heading">Quick Links</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li><a :href="iitk" style="color:rgb(65, 183, 230);">IITK website</a></li>
+                      <li><a :href="oir" style="color:rgb(65, 183, 230);">OIR website</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"> 
-                <h3 class="heading">Contact Information</h3>
-                <div class="block-23">
-                  <ul>
-                    <li><span class="icon ion-android-pin"></span><span class="text">Office of International Relations<br>Indian Institute of Technology Kanpur<br>Kanpur, Uttar Pradesh <br>India- 208016</span></li>
-                  </ul>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"> 
+                  <h3 class="heading">Contact Information</h3>
+                  <div class="block-23">
+                    <ul>
+                      <li><span class="icon ion-android-pin"></span><span class="text">Office of International Relations,Indian Institute of Technology Kanpur,Kanpur,Uttar Pradesh, India - 208016</span></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
               
+              <center><div class="row pt-5" style="margin-left:40%;">
                 <center><div class="col-md-12 text-center copyright">
-                    <!-- <h3 class="heading">Social Links</h3> -->
-                  <p >
+                   
+                  <p class="float-md-right">
                     <a href="https://www.facebook.com/oiriitk/" class="fa fa-facebook fa-2x p-3"></a>
                     <a href="https://twitter.com/iitkanpur?lang=en" class="fa fa-twitter fa-2x p-3"></a>
                     <a href="https://www.linkedin.com/in/iitkanpur1/?fbclid=IwAR2SwSxwchhozS5fSZaBxlCj3m9FBkxKQb1YuA2ngUeiFIJktUOx5xTiUzA" class="fa fa-linkedin fa-2x p-3"></a>
                     <a href="https://www.instagram.com/iit.kanpur/" class="fa fa-instagram fa-2x p-3"></a>
                   </p>
                 </div></center>
-              
+              </div></center>
             </div>
+          
           </footer>
+          </div>
       <!-- END footer -->
       
       <!-- loader -->
@@ -240,6 +243,7 @@
       </script>
        -->
       <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="main.js"></script>
       <script src="js/jquery-migrate-3.0.0.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>

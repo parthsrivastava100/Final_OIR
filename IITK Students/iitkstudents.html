@@ -17,6 +17,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="../css/style.css">
@@ -30,6 +31,7 @@
   </head>
 
   <body >
+    <div id="vue_use">
     <div class="wrapper">
       <div class="multi_color_border"></div>
       <div class="top_nav">
@@ -46,24 +48,25 @@
         <div class="nav__dropdown" >
             <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
             <ul class="dropdown-menu" aria-labelledby="btn1">
-              <li><a href="http://iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
-              <li><a href="../howToApply.html" target="_blank" class="dropdown-item">How to apply?</a></li>
-              <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
-              <li><a href="../Mou.html" target="_blank" class="dropdown-item">MoUs</a></li>
-              <li><a href="../FAQ.pdf" target="_blank" class="dropdown-item">FAQs</a></li>
-              <li><a href="../contact_us.html" target="_blank" class="dropdown-item">Contact us</a></li>
+              <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+              <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+              <li><a :href="appo" target="_blank" class="dropdown-item">Application Portal</a></li>
+              <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+              <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+              <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
             </ul>
           </div>
+        
       </div>
-
+      
       <div class="bottom_nav">
         <ul>
-          <li><a id="len1" class="hoverable" href="../At IITK/atiitk.html">At IITK</a></li>
-          <li><a id="len2" class="hoverable" href="../IITK Students/iitkstudents.html">IITK students</a></li>
-          <li><a id="len3" class="hoverable" href="../International students/int-Students.html">International Students</a></li>
-          <li><a id="len4" class="hoverable" href="../Faculty/faculty.html">Faculty</a></li>
-          <li><a id="len5" class="hoverable" href="../Mou/Mou.html">Mou's</a></li>
-          <li><a id="len6" class="hoverable" href="../Contact/contact_us.html">Contact Us</a></li>
+          <li><a id="len1" class="hoverable" :href="atiitk">At IITK</a></li>
+          <li><a id="len2" class="hoverable" :href="iitks">IITK students</a></li>
+          <li><a id="len3" class="hoverable" :href="is">International Students</a></li>
+          <li><a id="len4" class="hoverable" :href="faculty">Faculty</a></li>
+          <li><a id="len5" class="hoverable" :href="mo">Mou's</a></li>
+          <li><a id="len6" class="hoverable" :href="contact">Contact Us</a></li>
         </ul>
       </div>   
     </div> 
@@ -162,13 +165,13 @@
               <div class="row">
                 <div class="col-md-6">
                   <ul class="list-unstyled">
-                    <li><a href="http://iitk.ac.in" style="color:rgb(65, 183, 230);">IITK website</a></li>
+                    <li><a :href="iitk" style="color:rgb(65, 183, 230);">IITK website</a></li>
                     <!-- <li><a href="https://www.iitk.ac.in/oir/" style="color:rgb(65, 183, 230);">OIR website</a></li> -->
-                    <li><a href="howToApply.html" style="color:rgb(65, 183, 230);">How To Apply?</a></li>
-                    <li><a href="#" style="color:rgb(65, 183, 230);">Application Portal</a></li>
-                    <li><a href="Mou.html" style="color:rgb(65, 183, 230);">MoUs</a></li>
-                    <li><a href="#" style="color:rgb(65, 183, 230);">FAQs</a></li>
-                    <li><a href="contact_us.html" style="color:rgb(65, 183, 230);">Contact us</a></li>
+                    <li><a :href="apply" style="color:rgb(65, 183, 230);">How To Apply?</a></li>
+                    <li><a :href="appo" style="color:rgb(65, 183, 230);">Application Portal</a></li>
+                    <li><a :href="mo" style="color:rgb(65, 183, 230);">MoUs</a></li>
+                    <li><a :href="fa" style="color:rgb(65, 183, 230);">FAQs</a></li>
+                    <li><a :href="contact" style="color:rgb(65, 183, 230);">Contact us</a></li>
   
                   </ul>
                 </div>
@@ -197,7 +200,7 @@
             </div>
           </footer>
       <!-- END footer -->
-      
+    </div>
       <!-- loader -->
       <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
       <!-- <script>
@@ -222,7 +225,7 @@
       <script src="../js/jquery.waypoints.min.js"></script>
       <script src="../js/jquery.stellar.min.js"></script>
       <script src="../js/jquery.animateNumber.min.js"></script>
-      
+      <script src="../submain.js"></script>
       <script src="../js/jquery.magnific-popup.min.js"></script>
   
       <script src="../js/main.js"></script>
