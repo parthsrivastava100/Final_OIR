@@ -15,10 +15,20 @@
 }
 
 .content {
-  padding: 1rem .5rem 0 0.5rem;
-  /* max-height: 0; */
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  margin: 0 0 1rem 0;
+}
+.collapsible:after {
+  content: '\26AB'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\26AB"; /* Unicode character for "minus" sign (-) */
 }
