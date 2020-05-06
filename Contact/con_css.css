@@ -1,0 +1,51 @@
+
+  input:focus {
+    background-color: lightblue;
+  }
+ 
+  #fname  {
+    border: 2px solid skyblue;
+    width: 30%;
+    height:36px;
+  }
+
+  #lname  {
+    border: 2px solid skyblue;
+    width: 30%;
+    height:36px;
+  }
+  #email  {
+    border: 2px solid skyblue;
+    width: 60%;
+    height:36px;
+  }
+  #phone {
+    border: 2px solid skyblue;
+    width: 60%;
+    height:36px;
+  }
+  #sub {
+    border: 2px solid skyblue;
+    width: 100%;
+    height:36px;
+  }
+  #mess {
+    border: 2px solid skyblue;
+    width: 100%;
+    height:120px;
+  }
+  #but {
+    background-color: skyblue;
+    border-radius: 12px;
+    border: 2px solid skyblue;
+    width:100px;
+    border-radius: 4px;
+  }
+  #but {
+    transition-duration: 0.4s;
+  }
+  
+  #but {
+    background-color: skyblue; /* Green */
+    color: white;
+  }
