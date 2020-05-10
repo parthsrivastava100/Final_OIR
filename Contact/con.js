@@ -20,7 +20,7 @@ var email=document.getElementById("email").value;
 var sub=document.getElementById("sub").value;
 var mess=document.getElementById("mess").value;
 var db = firebase.firestore();
-db.collection("messages").doc(String(fname+" "+lname)).set({
+db.collection("messages").doc(String(fname+" "+lname)).collection("mails").doc().set({
 
     name:fname+" "+lname,
     email:email,

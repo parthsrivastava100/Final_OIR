@@ -19,99 +19,10 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom/navigation.css">
+    <link rel="stylesheet" href="css/custom/doublenav.css"> 
 
 
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        
-        #myImg,#myImg2 {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-        
-        #myImg:hover ,#myImg2:hover{opacity: 0.7;}
-        
-        /* The Modal (background) */
-        .modal {
-          display: none; /* Hidden by default */
-          position: fixed; /* Stay in place */
-          z-index: 1; /* Sit on top */
-          padding-top: 20px;
-          padding-bottom:10px;/* Location of the box */
-          left: 27%;
-          top: 30px;
-          width: 60%; 
-          height: 90%; 
-          overflow: auto; /* Enable scroll if needed */
-          background-color: rgb(0,0,0); /* Fallback color */
-          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-        }
-        
-        /* Modal Content (image) */
-        .modal-content {
-          margin: auto;
-          display: block;
-          width: 85%;
-          height: 95%;
-          max-width: 300px;
-        }
-        
-        /* Caption of Modal Image */
-        #caption {
-          margin: auto;
-          display: block;
-          width: 80%;
-          max-width: 700px;
-          text-align: center;
-          color: #ccc;
-          padding: 10px 0;
-          height: 150px;
-        }
-        
-        /* Add Animation */
-        .modal-content, #caption {  
-          -webkit-animation-name: zoom;
-          -webkit-animation-duration: 0.6s;
-          animation-name: zoom;
-          animation-duration: 0.6s;
-        }
-        
-        @-webkit-keyframes zoom {
-          from {-webkit-transform:scale(0)} 
-          to {-webkit-transform:scale(1)}
-        }
-        
-        @keyframes zoom {
-          from {transform:scale(0)} 
-          to {transform:scale(1)}
-        }
-        
-        /* The Close Button */
-        .close {
-          position: absolute;
-          top: 15px;
-          right: 35px;
-          color: #f1f1f1;
-          font-size: 40px;
-          font-weight: bold;
-          transition: 0.3s;
-        }
-        
-        .close:hover,
-        .close:focus {
-          color: #bbb;
-          text-decoration: none;
-          cursor: pointer;
-        }
-        
-        /* 100% Image Width on Smaller Screens */
-        @media only screen and (max-width: 700px){
-          .modal-content {
-            width: 100%;
-          }
-        }
-        </style>
+    
   </head>
 
 
@@ -120,50 +31,58 @@
     <!-- Start header 
     ====================================================================================================-->
     <div id="vue_use">
-    <header class="navigation">
-    
-      <nav class="nav d-flex justify-content-around pt-2" >   
-        <div class="nav__heading">
-          <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-          <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
-        </div>
-        
-        <div class="nav__dropdown" >
-          <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
-          <ul class="dropdown-menu" aria-labelledby="btn1">
-            <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
-            <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
-            <li><a :href="appo" target="_blank" class="dropdown-item">Application Portal</a></li>
-            <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
-            <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
-            <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
-          </ul>
-        </div>
+      <div class="wrapper">
       
-      </nav>
-
-      <nav class="nav d-flex justify-content-around" >
-        <ul class="nav__list d-flex justify-content-center">
-          <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
-          <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
-          <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
-          <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
-        </ul>  
-      </nav>
-    </header>
+      
+        <div class="top_nav">
+          <a href="index.html">
+            <div class="left">
+                <img class="image_kanp" src="images/IITK_LOGO3.png" alt="IIT kanpur" style="height: 55px; width:55px; margin-right: 15px; ">
+              <div class="logo">
+                <p style="font-size: 30px;">Office of International Relations<br>
+                </p>
+              </div>
+            </div> 
+          </a>
+         
+          <div class="nav__dropdown" >
+              <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="btn1">
+                <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+                <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+                <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+                <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+                <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+                <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+              </ul>
+            </div>
+           </div>
+        
+            
+        <div class="bottom_nav">
+          <ul>
+            <li><a id="len2" class="hoverable" :href="atiitk">At IITK</a></li>
+            <li><a id="len3" class="hoverable" :href="iitks">IITK students</a></li>
+            <li><a id="len4" class="hoverable" :href="is">International Students</a></li>
+            <li><a id="len5" class="hoverable" :href="faculty">Faculty</a></li>
+            <li><a id="len6" class="hoverable" :href="mo">Mou's</a></li>
+            <li><a id="len7" class="hoverable" :href="contact">Contact Us</a></li>
+          </ul>
+        </div>   
+       
+      </div> 
    
   
-      <div class= "site-section bg-light element-animate">
+     
         <div class="container">
           <div class="row">
               <div class="col-md-6 order-md-1">
                   <div class="heading">
-                    <h1 style="color: rgb(65, 183, 230)">Formalities after Arrival</h1>
+                    <h1 style="color: rgb(65, 183, 230)"> <br/><br/>Formalities after Arrival</h1>
                   </div>
                   <div class="text mb-5">
                     <p>
+                      
                        Visa Types: 
                     </p>
                   </div>
@@ -251,7 +170,7 @@
                           
                         </div>
                       </footer>
-                    </div>
+                    
     </div>
       <!-- loader -->
       <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>

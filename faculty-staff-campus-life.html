@@ -33,87 +33,99 @@
       <!-- custom-styles -->
       <link rel="stylesheet" href="css/custom/faculty-staff-campus-life.css">
       <link rel="stylesheet" href="css/custom/navigation.css">
+      <link rel="stylesheet" href="css/style.css">
+    
+      <link rel="stylesheet" href="css/custom/index.css">
+      <link rel="stylesheet" href="css/custom/navigation.css">
+      <link rel="stylesheet" href="css/custom/doublenav.css"> 
+      <link rel="stylesheet" href="scss/bouncer.scss">
+      
+      <link rel="stylesheet" href="css/custom/news1.css">
     </head>
     <body>
   
-     
+      <div id="vue_use">
       
-      <div class="navigation">
-        <div id="vue_use">
-        <nav class="nav d-flex justify-content-around pt-2" >   
-         
-          <div class="nav__heading">
-            
-            <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-            <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
-          </div>
+        <div class="wrapper">
+      
+      
+          <div class="top_nav">
+            <a href="index.html">
+              <div class="left">
+                  <img class="image_kanp" src="images/IITK_LOGO3.png" alt="IIT kanpur" style="height: 55px; width:55px; margin-right: 15px; ">
+                <div class="logo">
+                  <p style="font-size: 30px;">Office of International Relations<br>
+                  </p>
+                </div>
+              </div> 
+            </a>
+           
+            <div class="nav__dropdown" >
+                <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
+                <ul class="dropdown-menu" aria-labelledby="btn1">
+                  <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+                  <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+                  <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+                  <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+                  <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+                  <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+                </ul>
+              </div>
+             </div>
           
-          <div class="nav__dropdown" >
-            <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="btn1">
-              <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
-              <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
-              <li><a :href="appo" target="_blank" class="dropdown-item">Application Portal</a></li>
-              <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
-              <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
-              <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+              
+          <div class="bottom_nav">
+            <ul>
+              <li><a id="len2" class="hoverable" :href="atiitk">At IITK</a></li>
+              <li><a id="len3" class="hoverable" :href="iitks">IITK students</a></li>
+              <li><a id="len4" class="hoverable" :href="is">International Students</a></li>
+              <li><a id="len5" class="hoverable" :href="faculty">Faculty</a></li>
+              <li><a id="len6" class="hoverable" :href="mo">Mou's</a></li>
+              <li><a id="len7" class="hoverable" :href="contact">Contact Us</a></li>
             </ul>
-          </div>
-        
-        </nav>
-  
-        <nav class="nav d-flex justify-content-around" >
-          <ul class="nav__list d-flex justify-content-center">
-            <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
-            <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
-            <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
-            <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
-            <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
-            <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
-          </ul>  
-        </nav>
-  
-        <nav class="nav-2">
-          <div class="nav-2__heading">
-            <img class="nav-2__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-            <a class="nav-2__heading-text" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
-          </div>
-    
-          <input type="checkbox" class="sidebar__checkbox" id="sidebar-toggle">
-          <label for="sidebar-toggle" class="sidebar__button">
-              <span class="sidebar__icon">&nbsp;</span>
-          </label>
-          <div class="sidebar">
-            <div class="sidebar__view">
-              <ul class="sidebar__list">
-                  <li class="sidebar__item"><a class="sidebar__link" :href="atiitk">At IITK</a></li class="nav__item">
-                  <li class="sidebar__item"><a class="sidebar__link" :href="iitks">Students</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="is">International students</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="faculty">Faculty</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="mo">Mou's</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-                <li class="ql__heading">
-                  <a class="ql__link">Quick links</a>
-                  <span class="ql__arrow">&uarr;</span>
-                </li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="iitk">IITK website</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="apply">How to apply?</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="mo">MoUs</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="fa">FAQs</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-  
-              </ul>
-            </div>
-            
-          </div>
-        </div>
-        </nav>
+          </div>   
+         
+        </div> 
      
       </div>
 
 
       <!-- start content -->
+      <div class="container">
+      <div class="text mb-5">
+        <p>
+         <h2> IIT Kanpur</h2> offers a vibrant culture to its residents and one always has something to do. 
+          <br/>
+ 
+
+          Through the years, introduction of various clubs, organisations and institute festivals have contributed to harbouring a lively culture among the Campus Junta. After getting done with the academic activity for the day, campus residents have a plethora of activities to choose from and get involved in: 
+          <br/><ol>
+            <li>IIT Kanpur boasts sophisticated sport facilities with all the necessary equipment for the use of the campus residents. You could take a dip at the pool in the summers or play a game of Tennis with your peers! 
+
+              There are 2 Student Activity Centres (SAC) which house a well-equipped gymnasium and the following amenities:
+              <ul>
+                <li>Badminton Courts </li>
+                <li>Table Tennis  </li>
+                <li>Squash courts </li>
+                <li>Weightlifting </li>
+              </ul>
+              Apart from this we have a football and hockey field, an athletics and cricket ground, basketball courts, tennis courts and an Olympic sized swimming pool.  
+            </li>
+            <li>Being a technological institution, IIT Kanpur has been at the forefront in promoting scientific and technological activities on campus. Various clubs and hobby groups actively function under the Science and Technology Council (SnT Council). These clubs invite all enthusiastic people on campus to be a part of the team and engage in various innovative projects and competitions to develop many technical skills and share a great bond with their colleagues. 
+
+              To celebrate technology, the student body conducts the annual technical fest of IIT Kanpur; ‘Techkriti’. Techkriti is one of Asia’s largest technical festivals seeing a footfall of over 60000 people from India and abroad. Various competitions and talk shows from pioneers in the field of technology are held and people from technical institutions around the country reach IIT Kanpur to attend and participate in the fest. </li>
+              <li>For those who are passionate about cultural activities, we have the Media and Cultural Council (MnC Council). Under this council, clubs and societies host diverse cultural activities. Be it dance or drama, debating or fashion modelling, you will find like-minded people in these clubs along with whom you can pursue your passions while your stay at IIT Kanpur! 
+<br/>
+                Every year, in the month of October, IIT Kanpur organizes ‘Antaragni’, the annual inter-collegiate festival. Antaragni is one of India’s largest cultural meet ups and hosts about 40000 people on campus for cultural competitions, talk shows, and concerts. Well known celebrities make it to our campus to grace the event and inspire students. 
+                
+                 </li>
+          
+            </ol>
+          
+        </p>
+      </div>
+   
+
   
       <section class="slider-container">
         <div class="slider-control left inactive"></div>
@@ -230,7 +242,7 @@
           </div>
         </div>
       </section>
-      
+    </div>
       <!-- end content -->
  
   

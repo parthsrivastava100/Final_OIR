@@ -10,7 +10,7 @@ html,body {
   left: 0;
   width: 100%;
   height: min-content; 
-  background: linear-gradient(to bottom, #11CBD7, #fff) !important;
+  background: linear-gradient(to right, #252f35,rgb(18, 19, 31)) !important;
   box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
 }
@@ -29,34 +29,39 @@ html,body {
 }
 
 .nav-2 {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: minmax(max-content,3fr) max-content minmax(max-content,1fr);
-  align-items: center; 
+  margin-top: 0px;
+  width: 100%;
+ 
+  background: linear-gradient(to right, #252f35,rgb(18, 19, 31));
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav__heading, .nav-2__heading {
   justify-self: start;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .nav__heading-logo, .nav-2__heading-logo {
-  height: 60px;
-  width: 60px;
+  
+  height: 55px; width:55px; margin-right: 15px;
+  margin-left: 15px;
+
 }
 
 .nav__heading-text, .nav-2__heading-text {
-  text-decoration: none;
-  margin-left: 1rem;
-  color: #000;
-  font-family: 'Playfair Display', serif;;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  line-height: 1rem;
+  margin-top:19px;
+  /* margin-bottom: 0px; */
+  margin-right: 22px;
+  color: #11cbd7;
+  font-family: 'Fondamento', cursive;
+ font-size: 30px;
 }
 
 .nav__heading-text span {
@@ -74,12 +79,14 @@ html,body {
 }
 
 .nav__item {
+  color:white;
   text-transform: capitalize;
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   margin: 1rem;
+ 
 }
 
 .nav__item:before {
@@ -317,8 +324,8 @@ html,body {
     /* margin-left: .3rem; */
   }
   .nav-2__heading-logo{
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
   }
   .sidebar__icon {
     width: 1.5rem;
@@ -332,8 +339,8 @@ html,body {
     /* margin-left: .1rem; */
   }
   .nav-2__heading-logo{
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
   }
   .sidebar__icon {
     width: 1.5rem;
