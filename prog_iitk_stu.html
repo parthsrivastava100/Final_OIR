@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom/navigation.css">
   <link rel="stylesheet" href="css/custom/collapsable_list.css">
+  <link rel="stylesheet" href="css/custom/doublenav.css">
 </head>
 
 <div style="padding-top:60px;">
@@ -33,82 +34,50 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
     <header class="navigation">
-      <nav class="nav d-flex justify-content-around pt-2">
-        <div class="nav__heading">
-          <img class="nav__heading-logo"
-            src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png"
-            alt="IIT kanpur">
-          <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
-        </div>
-
-        <div class="nav__dropdown">
-          <div class="nav__dropdown dropdown">
-            <button style="margin-top: 1rem;" class="btn btn-primary dropdown-toggle" id="btn1" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="btn1">
+      <div class="wrapper">
+      
+      
+        <div class="top_nav">
+          <a href="index.html">
+            <div class="left">
+                <img class="image_kanp" src="images/IITK_LOGO3.png" alt="IIT kanpur" style="height: 55px; width:55px; margin-right: 15px; ">
+              <div class="logo">
+                <p style="font-size: 30px;">Office of International Relations<br>
+                </p>
+              </div>
+            </div> 
+          </a>
+         
+          <div class="nav__dropdown" >
+              <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
               <ul class="dropdown-menu" aria-labelledby="btn1">
-                <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
-                <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+                <li><a href="www.iitk.ac.in" target="_blank" class="dropdown-item">IITK website</a></li>
+                <li><a href="howToApply.html" target="_blank" class="dropdown-item">How to apply?</a></li>
                 <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
-                <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
-                <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
-                <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+                <li><a href="'Mou/Mou.html'" target="_blank" class="dropdown-item">MoUs</a></li>
+                <li><a href="FAQ.pdf" target="_blank" class="dropdown-item">FAQs</a></li>
+                <li><a href="Contact/contact_us.html" target="_blank" class="dropdown-item">Contact us</a></li>
               </ul>
-            </ul>
-          </div>
-        </div>
+            </div>
+           </div>
+        
+            
+        <div class="bottom_nav">
+          <ul>
+            <li><a id="len2" class="hoverable" href="At IITK/atiitk.html">At IITK</a></li>
+            <li><a id="len3" class="hoverable" href="IITK Students/iitkstudents.html">IITK students</a></li>
+            <li><a id="len4" class="hoverable" href="International students/int-Students.html">International Students</a></li>
+            <li><a id="len5" class="hoverable" href="Faculty/faculty.html">Faculty</a></li>
+            <li><a id="len6" class="hoverable" href="Mou/Mou.html">Mou's</a></li>
+            <li><a id="len7" class="hoverable" href="Contact/contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>   
+       
+      </div> 
 
-      </nav>
-
-      <nav class="nav d-flex justify-content-around">
-        <ul class="nav__list d-flex justify-content-center">
-          <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
-          <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
-          <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
-          <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
-        </ul>
-      </nav>
-
-      <nav class="nav-2">
-        <div class="nav-2__heading">
-          <img class="nav-2__heading-logo"
-            src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png"
-            alt="IIT kanpur">
-          <a class="nav-2__heading-text" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
-        </div>
-
-        <input type="checkbox" class="sidebar__checkbox" id="sidebar-toggle">
-        <label for="sidebar-toggle" class="sidebar__button">
-          <span class="sidebar__icon">&nbsp;</span>
-        </label>
-        <div class="sidebar">
-          <div class="sidebar__view">
-            <ul class="sidebar__list">
-              <li class="sidebar__item"><a class="sidebar__link" :href="atiitk">At IITK</a></li class="nav__item">
-              <li class="sidebar__item"><a class="sidebar__link" :href="iitks">Students</a></li>
-              <li class="sidebar__item"><a class="sidebar__link" :href="is">International students</a></li>
-              <li class="sidebar__item"><a class="sidebar__link" :href="faculty">Faculty</a></li>
-              <li class="sidebar__item"><a class="sidebar__link" :href="mo">Mou's</a></li>
-              <li class="sidebar__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-              <li class="ql__heading">
-                <a class="ql__link">Quick links</a>
-                <span class="ql__arrow">&uarr;</span>
-              </li>
-              <li class="sidebar__item ql__item"><a class="sidebar__link" :href="iitk">IITK website</a></li>
-              <li class="sidebar__item ql__item"><a class="sidebar__link" :href="apply">How to apply?</a></li>
-              <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
-              <li class="sidebar__item ql__item"><a class="sidebar__link" :href="mo">MoUs</a></li>
-              <li class="sidebar__item ql__item"><a class="sidebar__link" :href="fa">FAQs</a></li>
-              <li class="sidebar__item ql__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-
-            </ul>
-          </div>
-
-        </div>
-      </nav>
+      
 
     </header>
 
@@ -144,7 +113,7 @@
                   <li>
                     <a href="https://www.iitk.ac.in/doaa/data/pgmanual-02Sep2015.pdf" target="_blank">PG Manual</a>
                   </li>
-  
+
                   <li>
                     <a href="http://students.iitk.ac.in/gymkhana/" target="_blank">Students' Gymkhana</a>
                   </li>
@@ -160,15 +129,15 @@
           </div>
           <div class="col-md-8">
             <!-- content -->
-  
+
             <div class="site-section element-animate">
               <!-- ///////mt-5///// -->
               <div class="container">
-  
+
                 <div class="row">
                   <class class="col-md-10 order-md-2">
                     <h2 style="color:rgb(65, 183, 230);" class="mb-5">Programs For IITK students</h2>
-  
+
                     <div class="row mb-5">
                       <div class="col-sm-3">
                         <p style="font-size: 18px;"><b>Joint Degree Programme</b></p>
@@ -224,35 +193,43 @@
                         <div class="col-sm-3">
                           <p style="font-size: 18px;"><b>Student Exchange Programme</b></p>
                         </div>
+                        <div>
                         <div class="col-sm-9">
                           <div class="table-responsive">
+                            <h3>Newer Programs</h3>
+                            <div id="prog">
                             <table class="table table-striped">
-                  <script src="./getdata.js"></script>
-                  <script >
-                     var i =0;
-                
-                  fn1().then(function(content){
-                    console.log(content.head[4]);
-                        while(content.head[i] !== '')
-                  {
-                    document.write(' <tr');
-                    document.write('>');
-                    document.write('<td style="padding:2px;">');
-                    document.write(' <button class="collapsible">'+content.head[i]+'</button>');
-                    document.write(' <div class="content">'+content.body[i]+'</p>');
-                    document.write('</div');
-                    document.write('</td>');
-                    document.write('</tr>');     
-                    i=i+1;                    
-                  } 
-                  })   
-
-                  
-                
-               
-                  </script>
+                              <div id="prog">
+                                <template v-for="out in brr">
+                                  <tr>
+                                   <td style="padding:2px;">
+                                     <button class="collapsible">{{out.c}}  ||  {{out.e}}</button>
+                                     <div class="content">
+                                       <p style="text-align: justify;">{{out.d}}</p>
+                                     </div>
+                                   </td>
+                                 </tr>
+                                </template>
+                              </div>
+                              </table>
+                            <h3>Older Programs</h3>
+                            <table class="table table-striped">
+                            
+                              <template v-for="out in arr">
+                                <tr>
+                                 <td style="padding:2px;">
+                                   <button class="collapsible">{{out.a}}</button>
+                                   <div class="content">
+                                     <p style="text-align: justify;">{{out.b}}</p>
+                                   </div>
+                                 </td>
+                               </tr>
+                              </template>
+                            
                             </table>
                           </div>
+                          </div>
+                        </div>
                         </div>
                     </div>
                   </class>
@@ -262,58 +239,56 @@
             </div>
         </div>
         </div>
+
+
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <h3 class="heading">About OIR IITK</h3>
+                <p>The Office Of International Relations works to promote the exchange of ideas, culture and knowledge overseas</p>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" > 
+                <h3 class="heading">Quick Links</h3>
+                <div class="row">
+                  
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li><a href="www.iitk.ac.in" style="color:rgb(65, 183, 230);">IITK website</a></li>
+                      <!-- <li><a href="https://www.iitk.ac.in/oir/" style="color:rgb(65, 183, 230);">OIR website</a></li> -->
+                      <li><a href="howToApply.html" style="color:rgb(65, 183, 230);">How To Apply?</a></li>
+                      <li><a href="#" style="color:rgb(65, 183, 230);">Application Portal</a></li>
+                      <li><a href="Mou/Mou.html" style="color:rgb(65, 183, 230);">MoUs</a></li>
+                      <li><a href="FAQ.pdf" style="color:rgb(65, 183, 230);">FAQs</a></li>
+                      <li><a href="Contact/contact_us.html" style="color:rgb(65, 183, 230);">Contact us</a></li>
   
-
-<footer class="site-footer">
-
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" style="margin-right:115px; margin-left:65px;">
-          <h3>About OIR IITK</h3>
-          <p>The Office Of International Relations works to promote the exchange of ideas,culture and knowledge
-            overseas.</p>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" style="margin-right:55px;">
-          <h3 class="heading">Quick Links</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li><a href="www.iitk.ac.in/" style="color:rgb(65, 183, 230);">IITK website</a></li>
-                <li><a href="www.iitk.ac.in/oir" style="color:rgb(65, 183, 230);">OIR website</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-          <h3 class="heading">Contact Information</h3>
-          <div class="block-23">
-            <ul>
-              <li><span class="icon ion-android-pin"></span><span class="text">Office of International
-                  Relations,Indian Institute of Technology Kanpur,Kanpur,Uttar Pradesh, India - 208016</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <center>
-        <div class="row pt-5" style="margin-left:40%;">
-          <center>
-            <div class="col-md-12 text-center copyright">
-
-              <p class="float-md-right">
-                <a href="https://www.facebook.com/oiriitk/" class="fa fa-facebook fa-2x p-3"></a>
-                <a href="https://twitter.com/iitkanpur?lang=en" class="fa fa-twitter fa-2x p-3"></a>
-                <a href="https://www.linkedin.com/in/iitkanpur1/?fbclid=IwAR2SwSxwchhozS5fSZaBxlCj3m9FBkxKQb1YuA2ngUeiFIJktUOx5xTiUzA"
-                  class="fa fa-linkedin fa-2x p-3"></a>
-                <a href="https://www.instagram.com/iit.kanpur/" class="fa fa-instagram fa-2x p-3"></a>
-              </p>
-            </div>
-          </center>
-        </div>
-      </center>
-    </div>
-
-  </footer>
+                    </ul>
+                  </div>
+                
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"> 
+                  <h3 class="heading">Contact Information</h3>
+                  <div class="block-23">
+                    <ul>
+                      <li><span class="icon ion-android-pin"></span><span class="text">Office of International Relations<br>Indian Institute of Technology Kanpur<br>Kanpur, Uttar Pradesh <br>India- 208016</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+                
+                  <center><div class="col-md-12 text-center copyright">
+                      <!-- <h3 class="heading">Social Links</h3> -->
+                    <p >
+                      <a href="https://www.facebook.com/oiriitk/" class="fa fa-facebook fa-2x p-3"></a>
+                      <a href="https://twitter.com/iitkanpur?lang=en" class="fa fa-twitter fa-2x p-3"></a>
+                      <a href="https://www.linkedin.com/in/iitkanpur1/?fbclid=IwAR2SwSxwchhozS5fSZaBxlCj3m9FBkxKQb1YuA2ngUeiFIJktUOx5xTiUzA" class="fa fa-linkedin fa-2x p-3"></a>
+                      <a href="https://www.instagram.com/iit.kanpur/" class="fa fa-instagram fa-2x p-3"></a>
+                    </p>
+                  </div></center>
+                
+              </div>
+            </footer>
   <script>
     //Script for News Section================================================================
     var flag = 0;
@@ -327,7 +302,7 @@
     }
       //=====================================================================================
   </script>
-
+  <script src="./prog.js"></script>
   <script src="main.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.0.js"></script>
