@@ -1,0 +1,31 @@
+.alpha{
+    
+        margin-top: 0px;
+        width: 100%;
+       
+        background: linear-gradient(to right, #252f35,rgb(18, 19, 31));
+        padding-top: 5px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+}
+
+.beta .log{
+    margin-left: 30px;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+
+
+    margin-top:19px;
+    /* margin-bottom: 0px; */
+    margin-right: 22px;
+    color: #11cbd7;
+    font-family: 'Fondamento', cursive;
+  }
+
+

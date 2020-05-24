@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom/index.css">
     <link rel="stylesheet" href="css/custom/navigation.css">
-
+    <link rel="stylesheet" href="css/custom/doublenav.css">
 
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
@@ -124,76 +124,46 @@
     
     <header class="navigation">
       <div id="vue_use">
-      <nav class="nav d-flex justify-content-around pt-2" >   
-        <div class="nav__heading">
-          <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-          <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
-        </div>
-        
-        <div class="nav__dropdown">
-          <div class="nav__dropdown dropdown">
-            <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="btn1">
-              <ul class="dropdown-menu" aria-labelledby="btn1">
-                <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
-                <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
-                <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
-                <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
-                <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
-                <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
-              </ul>
-            </ul>
-          </div>
-        </div>
+        <div class="wrapper">
       
-      </nav>
-
-      <nav class="nav d-flex justify-content-around" >
-        <ul class="nav__list d-flex justify-content-center">
-          <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
-          <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
-          <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
-          <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
-        </ul>  
-      </nav>
-
-      <nav class="nav-2">
-        <div class="nav-2__heading">
-          <img class="nav-2__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-          <a class="nav-2__heading-text" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
-        </div>
-  
-        <input type="checkbox" class="sidebar__checkbox" id="sidebar-toggle">
-        <label for="sidebar-toggle" class="sidebar__button">
-            <span class="sidebar__icon">&nbsp;</span>
-        </label>
-        <div class="sidebar">
-          <div class="sidebar__view">
-            <ul class="sidebar__list">
-                <li class="sidebar__item"><a class="sidebar__link" :href="atiitk">At IITK</a></li class="nav__item">
-                <li class="sidebar__item"><a class="sidebar__link" :href="iitks">Students</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" :href="is">International students</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" :href="faculty">Faculty</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" :href="mo">Mou's</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-              <li class="ql__heading">
-                <a class="ql__link">Quick links</a>
-                <span class="ql__arrow">&uarr;</span>
-              </li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="iitk">IITK website</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="apply">How to apply?</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="mo">MoUs</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="fa">FAQs</a></li>
-                <li class="sidebar__item ql__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-
-            </ul>
-          </div>
+      
+          <div class="top_nav">
+            <a href="index.html">
+              <div class="left">
+                  <img class="image_kanp" src="images/IITK_LOGO3.png" alt="IIT kanpur" style="height: 55px; width:55px; margin-right: 15px; ">
+                <div class="logo">
+                  <p style="font-size: 30px;">Office of International Relations<br>
+                  </p>
+                </div>
+              </div> 
+            </a>
+           
+            <div class="nav__dropdown" >
+                <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
+                <ul class="dropdown-menu" aria-labelledby="btn1">
+                  <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+                  <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+                  <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+                  <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+                  <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+                  <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+                </ul>
+              </div>
+             </div>
           
-        </div>
-      </nav>
+              
+          <div class="bottom_nav">
+            <ul>
+              <li><a id="len2" class="hoverable" :href="atiitk">At IITK</a></li>
+              <li><a id="len3" class="hoverable" :href="iitks">IITK students</a></li>
+              <li><a id="len4" class="hoverable" :href="is">International Students</a></li>
+              <li><a id="len5" class="hoverable" :href="faculty">Faculty</a></li>
+              <li><a id="len6" class="hoverable" :href="mo">Mou's</a></li>
+              <li><a id="len7" class="hoverable" :href="contact">Contact Us</a></li>
+            </ul>
+          </div>   
+         
+        </div> 
       </div>
     </header>
   
@@ -249,7 +219,11 @@
                  
                 <div class="text mb-5">
                     <p>
-                        Planning to join Indian Institute of Technology Kanpur (IITK)? We welcome you to the IITK community and help you to achieve your academic goals in a friendly and professional environment. IITK gives you the excellent opportunity of academic as well as cultural exposure.
+                      Foreign nationals can either apply for Degree Programs (Master/Doctoral) or Non-Degree Programs (Course work / Research not leading to a degree) here. Admission into IIT Kanpur's undergraduate programs is conducted by the Joint Admission Board, all of which is elaborated in the section on Programs offered. 
+                      In addition, IIT Kanpur offers a flexible academic curriculum in terms of course template, open electives, majors, minors, with the atmosphere of ingenuity and true learning.
+                      IIT Kanpur provides the unique opportunity to students to apply at any time of the year and these students will be invited to campus at a time of mutual convenience and understanding. 
+                      
+                      
                     </p>
                   </div>
                   <table class="table">
@@ -340,8 +314,8 @@
                   </div>
               </div>
           </div>
+        </div>
          
-           
           <footer class="site-footer">
             <div class="container">
               <div class="row mb-5">
@@ -352,7 +326,6 @@
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" > 
                   <h3 class="heading">Quick Links</h3>
                   <div class="row">
-                    
                     <div class="col-md-6">
                       <ul class="list-unstyled">
                         <li><a href="http://iitk.ac.in" style="color:rgb(65, 183, 230);">IITK website</a></li>
@@ -365,7 +338,6 @@
       
                       </ul>
                     </div>
-                  
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"> 
@@ -390,6 +362,7 @@
                   
                 </div>
               </footer>
+        
        
       <!-- loader -->
       <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>

@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
+
+}
+.alpha{
+  background: #11cbd7;
 }
 
 
@@ -33,16 +38,16 @@
 
 .wrapper .multi_color_border{
   width: 100%;
-  height: 5px;
+  height: 3px;
   background: linear-gradient(to right, #11cbd7 0% , #11cbd7 25%, #494949 25%, #494949 50%, #11cbd7 50%, #11cbd7 75%, #494949 75%, #494949 100%);
 }
 
 .wrapper .top_nav{
   margin-top: 0px;
   width: 100%;
-  height: auto;
+ 
   background: linear-gradient(to right, #252f35,rgb(18, 19, 31));
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -86,7 +91,7 @@
 .wrapper .bottom_nav{
   width: 100%;
   background: black;
-  height: 45px;
+  height: 55px;
   padding: 0 50px;
 }
 

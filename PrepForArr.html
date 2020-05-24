@@ -19,6 +19,8 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom/navigation.css">
+    <link rel="stylesheet" href="css/custom/doublenav.css">
+
   </head>
 
 
@@ -27,42 +29,46 @@
     <!-- Start header 
     ====================================================================================================-->
     <div id="vue_use">
-    <header class="navigation">
-     
-      <nav class="nav d-flex justify-content-around pt-2" >   
-        <div class="nav__heading">
-          <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-          <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
-        </div>
+      <div class="wrapper">
+      
+      
+        <div class="top_nav">
+          <a href="index.html">
+            <div class="left">
+                <img class="image_kanp" src="images/IITK_LOGO3.png" alt="IIT kanpur" style="height: 55px; width:55px; margin-right: 15px; ">
+              <div class="logo">
+                <p style="font-size: 30px;">Office of International Relations<br>
+                </p>
+              </div>
+            </div> 
+          </a>
+         
+          <div class="nav__dropdown" >
+              <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="btn1">
+                <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
+                <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
+                <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
+                <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
+                <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
+                <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+              </ul>
+            </div>
+           </div>
         
-        <div class="nav__dropdown" >
-          <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
-          <ul class="dropdown-menu" aria-labelledby="btn1">
-            <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
-            <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
-            <li><a :href="appo" target="_blank" class="dropdown-item">Application Portal</a></li>
-            <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
-            <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
-            <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
+            
+        <div class="bottom_nav">
+          <ul>
+            <li><a id="len2" class="hoverable" :href="atiitk">At IITK</a></li>
+            <li><a id="len3" class="hoverable" :href="iitks">IITK students</a></li>
+            <li><a id="len4" class="hoverable" :href="is">International Students</a></li>
+            <li><a id="len5" class="hoverable" :href="faculty">Faculty</a></li>
+            <li><a id="len6" class="hoverable" :href="mo">Mou's</a></li>
+            <li><a id="len7" class="hoverable" :href="contact">Contact Us</a></li>
           </ul>
-        </div>
-      
-      </nav>
-
-      <nav class="nav d-flex justify-content-around" >
-        <ul class="nav__list d-flex justify-content-center">
-          <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
-          <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
-          <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
-          <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
-          <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
-        </ul>  
-      </nav>
-
-      
-   
-    </header>
+        </div>   
+       
+      </div> 
 
     <!-- CAROUSEL 
     ==========================================================================================-->
@@ -108,7 +114,7 @@
             <div class="col-md-6 order-md-1">
                
             </div>
-        
+      
             
 
         <div class="table-responsive">
@@ -117,45 +123,45 @@
                 <center><h2>Help Sheet</h2></center>
                 <br>
               <h2 style="color:rgb(65, 183, 230);">Pre-Departure</h2>
-              <ul>
+              <ul id="er" >
                 <li>
-                    Apply for visa and book your tickets in advance.
+                    &#9900; Apply for visa and book your tickets in advance.
                 </li>
                 <li>
-                    Buy a Health Insurance or get a health certificate from your doctor.
+                  &#9900; Buy a Health Insurance or get a health certificate from your doctor.
                 </li>
                 <li>
-                    Packing Checklist: There are some very important items you will want to have handy at all times. These are:
+                  &#9900;Packing Checklist: There are some very important items you will want to have handy at all times. These are:
                     <ul>
                         <li>
-                            Passport & Visa
+                          &ensp;  &#9900; Passport & Visa
                         </li>
-                        <li>Tickets</li>
-                        <li>Prescription medicine</li>
-                        <li>Glasses</li>
-                        <li>Money in Indian Currency</li>
-                        <li>Health Certificate with proof of required vaccinations or
+                        <li>&ensp; &#9900;Tickets</li>
+                        <li>&ensp; &#9900;Prescription medicine</li>
+                        <li>&ensp; &#9900;Glasses</li>
+                        <li>&ensp; &#9900;Money in Indian Currency</li>
+                        <li>&ensp; &#9900;Health Certificate with proof of required vaccinations or
                             health insurance</li>
-                        <li>Other official documentation (e. g Offer Letter from IITK)</li>
+                        <li>&ensp; &#9900;Other official documentation (e. g Offer Letter from IITK)</li>
                     </ul>
                 </li>
                 <li>
-                    Keep multiple copies of important documents in a safe place
+                  &#9900;Keep multiple copies of important documents in a safe place
                     separate from original documents.
                 </li>
                 <li>
-                    Keep all necessary items you will require during your stay in
+                  &#9900; Keep all necessary items you will require during your stay in
                     India.
                 </li>
                 <li>
-                    <b>Inform IR office in advance about your travel plans and for pick- up service from Kanpur railway station/ Lucknow airport.</b>
+                    <b>&#9900;Inform IR office in advance about your travel plans and for pick- up service from Kanpur railway station/ Lucknow airport.</b>
                 </li>
               </ul>
             </table>
           </div>
         <div class="row">
           <div class="col-md-10 order-md-2">
-            <h3 style="color:rgb(65, 183, 230);"><br><br><br>On Campus Life At IIT Kanpur</h3>
+            <h3 style="color:rgb(65, 183, 230);"><br>On Campus Life At IIT Kanpur</h3>
             <ul>
               <li>
                   <b>Accomodation:</b>Students will be given two options for residence. First option will be rooms in the Visitor Hostel (Extension), which are air-conditioned and fully equipped. Charges for these rooms will be INR 7500 per month (on shared basis; INR 15000 for single accommodation). 

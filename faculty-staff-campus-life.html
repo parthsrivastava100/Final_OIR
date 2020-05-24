@@ -1,257 +1,315 @@
+<!doctype html>
 
-  <!doctype html>
-  <html lang="en">
-    <head>
-        <style>
-            .footer {
-               /* position: fixed; */
-               left: 0;
-               bottom: 0;
-               width: 100%;
-               height: 110px;
-               background-color: black;
-               color: white;
-               text-align: center;
-            }
-            </style>
-      <title>Faculty And Campus Life</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-  
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-  
-      <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-      <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-      <!-- Theme Style -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- custom-styles -->
-      <link rel="stylesheet" href="css/custom/faculty-staff-campus-life.css">
-      <link rel="stylesheet" href="css/custom/navigation.css">
-    </head>
-    <body>
-  
+<html lang="en">
+
+  <head>
+    <title>Office Of International Relations IITK</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,700i,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
      
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/custom/index.css">
+    <link rel="stylesheet" href="css/custom/navigation.css">
+    <link rel="stylesheet" href="css/custom/doublenav.css"> 
+    <link rel="stylesheet" href="scss/bouncer.scss">
+    
+    <link rel="stylesheet" href="css/custom/news1.css">
+    <style>
+      .modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
+    </style>
+  </head>
+
+
+  <body>
+    <div id="vue_use">
+  
+    <div class="wrapper">
       
-      <div class="navigation">
-        <div id="vue_use">
-        <nav class="nav d-flex justify-content-around pt-2" >   
-         
-          <div class="nav__heading">
-            
-            <img class="nav__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-            <a class="nav__heading-text" href="#"><span></span>OFFICE OF INTERNATIONAL RELATIONS</a>
-          </div>
-          
-          <div class="nav__dropdown" >
+      
+      <div class="top_nav">
+        <a href="index.html">
+          <div class="left">
+              <img class="image_kanp" src="images/IITK_LOGO3.png" alt="IIT kanpur" style="height: 55px; width:55px; margin-right: 15px; ">
+            <div class="logo">
+              <p style="font-size: 30px;">Office of International Relations<br>
+              </p>
+            </div>
+          </div> 
+        </a>
+       
+        <div class="nav__dropdown" >
             <button style="margin-top: 1rem;" class ="btn btn-primary dropdown-toggle" id ="btn1"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick Links<span class="caret"></span></button>
             <ul class="dropdown-menu" aria-labelledby="btn1">
               <li><a :href="iitk" target="_blank" class="dropdown-item">IITK website</a></li>
               <li><a :href="apply" target="_blank" class="dropdown-item">How to apply?</a></li>
-              <li><a :href="appo" target="_blank" class="dropdown-item">Application Portal</a></li>
+              <li><a href="#" target="_blank" class="dropdown-item">Application Portal</a></li>
               <li><a :href="mo" target="_blank" class="dropdown-item">MoUs</a></li>
               <li><a :href="fa" target="_blank" class="dropdown-item">FAQs</a></li>
               <li><a :href="contact" target="_blank" class="dropdown-item">Contact us</a></li>
             </ul>
           </div>
-        
-        </nav>
-  
-        <nav class="nav d-flex justify-content-around" >
-          <ul class="nav__list d-flex justify-content-center">
-            <li class="nav__item"><a class="nav__link" :href="atiitk">At IITK</a></li class="nav__item">
-            <li class="nav__item"><a class="nav__link" :href="iitks">Students</a></li>
-            <li class="nav__item"><a class="nav__link" :href="is">International students</a></li>
-            <li class="nav__item"><a class="nav__link" :href="faculty">Faculty</a></li>
-            <li class="nav__item"><a class="nav__link" :href="mo">Mou's</a></li>
-            <li class="nav__item"><a class="nav__link" :href="contact">Contact us</a></li>
-          </ul>  
-        </nav>
-  
-        <nav class="nav-2">
-          <div class="nav-2__heading">
-            <img class="nav-2__heading-logo" src="images/kisspng-master-of-business-administration-mba-iit-kanpu-indian-national-wind-5b0c4eafd9fa51.4870062315275332318929.png" alt="IIT kanpur">
-            <a class="nav-2__heading-text" href="http://iitk.ac.in">OFFICE OF INTERNATIONAL RELATIONS</a>
-          </div>
-    
-          <input type="checkbox" class="sidebar__checkbox" id="sidebar-toggle">
-          <label for="sidebar-toggle" class="sidebar__button">
-              <span class="sidebar__icon">&nbsp;</span>
-          </label>
-          <div class="sidebar">
-            <div class="sidebar__view">
-              <ul class="sidebar__list">
-                  <li class="sidebar__item"><a class="sidebar__link" :href="atiitk">At IITK</a></li class="nav__item">
-                  <li class="sidebar__item"><a class="sidebar__link" :href="iitks">Students</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="is">International students</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="faculty">Faculty</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="mo">Mou's</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-                <li class="ql__heading">
-                  <a class="ql__link">Quick links</a>
-                  <span class="ql__arrow">&uarr;</span>
-                </li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="iitk">IITK website</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="apply">How to apply?</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" href="#">Application portal</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="mo">MoUs</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="fa">FAQs</a></li>
-                  <li class="sidebar__item ql__item"><a class="sidebar__link" :href="contact">Contact us</a></li>
-  
-              </ul>
-            </div>
-            
-          </div>
-        </div>
-        </nav>
+         </div>
+      
+          
+      <div class="bottom_nav">
+        <ul>
+          <li><a id="len2" class="hoverable" :href="atiitk">At IITK</a></li>
+          <li><a id="len3" class="hoverable" :href="iitks">IITK students</a></li>
+          <li><a id="len4" class="hoverable" :href="is">International Students</a></li>
+          <li><a id="len5" class="hoverable" :href="faculty">Faculty</a></li>
+          <li><a id="len6" class="hoverable" :href="mo">Mou's</a></li>
+          <li><a id="len7" class="hoverable" :href="contact">Contact Us</a></li>
+        </ul>
+      </div>   
      
-      </div>
+    </div> 
+
+    </script>
 
 
-      <!-- start content -->
-  
-      <section class="slider-container">
-        <div class="slider-control left inactive"></div>
-        <div class="slider-control right"></div>
-        <ul class="slider-pagi"></ul>
-        <div class="slider">
-          <div class="slide slide-0 active">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">Life At IITK</h2>
-                <p class="slide__text-desc">IITK offers a supportive enriching environment to its faculty and staff in all respects. The well laid out campus is a great place for children to grow up with excellent schools and a stimulating environment. Away from the hustle bustle of the city the IITK campus offers a peaceful and modern lifestyle to the faculty, staff and their families.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-1 ">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">housing</h2>
-                <p class="slide__text-desc">The faculty and staff at IITK live on campus where they have easy access to facilities and activities. The great housing has contributed to the emergence of IITK as a leading institute. The comfortable and serene surroundings support an enjoyable and enriching life style.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-2">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">Places to eat</h2>
-                <p class="slide__text-desc">The IITK campus and Kanpur city offer many options for eating out. They offer all popular world cuisines along with the local cuisines of Kanpur and Lucknow.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-3">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">retail & services</h2>
-                <p class="slide__text-desc">There are several retail areas on the campus with shops and services to meet the day to day needs of the campus community.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-4">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">healthcare</h2>
-                <p class="slide__text-desc">IITK is well served by a conveniently located Health Centre. The doctors and staff of the Health Centre are committed to the health and well being of the campus community.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-5">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">events</h2>
-                <p class="slide__text-desc">Academic, sports and cultural events take place nearly all year round at IITK.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-6">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">clubs & communities</h2>
-                <p class="slide__text-desc">IITK has a faculty club along with several other formal and informal forums. There is great bonding among the campus community.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-7">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">culture</h2>
-                <p class="slide__text-desc">Living at IITK means easy access to a rich variety of fine and performing arts. Leading artists visit the campus regularly. There are also several cultural clubs at IIT Kanpur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide slide-8">
-            <div class="slide__bg"></div>
-            <div class="slide__content">
-              <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-              </svg>
-              <div class="slide__text">
-                <h2 class="slide__text-heading">sports & recreation</h2>
-                <p class="slide__text-desc">IITK offers a wide range of sports and recreational facilities to support the modern healthy living choices. The campus community participates in all of them enthusiastically and along with its challenge each sports and recreational activity also brings with it an opportunity to bond with other members of the campus community.</p>
-              </div>
-            </div>
-          </div>
+ <div class="container">
+    <div class="text mb-5">
+      <p>
+       <h2> <br/><br/>IIT Kanpur</h2> offers a vibrant culture to its residents and one always has something to do. 
+        <br/>
+
+
+        Through the years, introduction of various clubs, organisations and institute festivals have contributed to harbouring a lively culture among the Campus Junta. After getting done with the academic activity for the day, campus residents have a plethora of activities to choose from and get involved in: 
+        <br/><ol>
+          <li>IIT Kanpur boasts sophisticated sport facilities with all the necessary equipment for the use of the campus residents. You could take a dip at the pool in the summers or play a game of Tennis with your peers! 
+
+            There are 2 Student Activity Centres (SAC) which house a well-equipped gymnasium and the following amenities:
+            <ul>
+              <li>Badminton Courts </li>
+              <li>Table Tennis  </li>
+              <li>Squash courts </li>
+              <li>Weightlifting </li>
+            </ul>
+            Apart from this we have a football and hockey field, an athletics and cricket ground, basketball courts, tennis courts and an Olympic sized swimming pool.  
+          </li>
+          <li>Being a technological institution, IIT Kanpur has been at the forefront in promoting scientific and technological activities on campus. Various clubs and hobby groups actively function under the Science and Technology Council (SnT Council). These clubs invite all enthusiastic people on campus to be a part of the team and engage in various innovative projects and competitions to develop many technical skills and share a great bond with their colleagues. 
+
+            To celebrate technology, the student body conducts the annual technical fest of IIT Kanpur; ‘Techkriti’. Techkriti is one of Asia’s largest technical festivals seeing a footfall of over 60000 people from India and abroad. Various competitions and talk shows from pioneers in the field of technology are held and people from technical institutions around the country reach IIT Kanpur to attend and participate in the fest. </li>
+            <li>For those who are passionate about cultural activities, we have the Media and Cultural Council (MnC Council). Under this council, clubs and societies host diverse cultural activities. Be it dance or drama, debating or fashion modelling, you will find like-minded people in these clubs along with whom you can pursue your passions while your stay at IIT Kanpur! 
+<br/>
+              Every year, in the month of October, IIT Kanpur organizes ‘Antaragni’, the annual inter-collegiate festival. Antaragni is one of India’s largest cultural meet ups and hosts about 40000 people on campus for cultural competitions, talk shows, and concerts. Well known celebrities make it to our campus to grace the event and inspire students. 
+              
+               </li>
+        
+          </ol>
+        
+      </p>
+    </div>
+  </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////// -->
+
+    <div id ="Thecarousel" class= "carousel slide" data-ride ="carousel" > 
+      <ol class="carousel-indicators">
+          <li data-target="#Thecarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#Thecarousel" data-slide-to="1"></li>
+          <li data-target="#Thecarousel" data-slide-to="2"></li>
+          <li data-target="#Thecarousel" data-slide-to="3"></li>
+      </ol>
+      <div class = "carousel-inner">
+        <div class = "carousel-item active">
+          <img class = "d-block w-100" src = "images/c1.jpeg" alt="First slide" style="height:550px;">
         </div>
-      </section>
-      
-      <!-- end content -->
- 
-  
-      <!-- loader -->
-      <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
-  
-      <script src="js/jquery-3.2.1.min.js"></script>
-      <script src="main.js"></script>
-      <script src="js/jquery-migrate-3.0.0.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/custom/campus-life.js"></script>
-      <script src="js/custom/navigation.js"></script>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/c2.jpeg" alt="Second slide" style="height:550px;">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/c6.jpg" alt="Third slide" style="height:550px;">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/c4.jpg" alt="Forth slide" style="height:550px;">
+        </div>
+        
+      </div>
+      <!-- controls -->
+      <a class="carousel-control-prev" href="#Thecarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#Thecarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-  </body>
-  </html>
   
+   
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+              <h3 class="heading">About OIR IITK</h3>
+              <p>The Office Of International Relations works to promote the exchange of ideas, culture and knowledge overseas</p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" > 
+              <h3 class="heading">Quick Links</h3>
+              <div class="row">
+                
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><a :href="iitk" style="color:rgb(65, 183, 230);">IITK website</a></li>
+                    <!-- <li><a href="https://www.iitk.ac.in/oir/" style="color:rgb(65, 183, 230);">OIR website</a></li> -->
+                    <li><a :href="apply" style="color:rgb(65, 183, 230);">How To Apply?</a></li>
+                    <li><a href="#" style="color:rgb(65, 183, 230);">Application Portal</a></li>
+                    <li><a :href="mo" style="color:rgb(65, 183, 230);">MoUs</a></li>
+                    <li><a :href="fa" style="color:rgb(65, 183, 230);">FAQs</a></li>
+                    <li><a :href="contact" style="color:rgb(65, 183, 230);">Contact us</a></li>
+
+                  </ul>
+                </div>
+              
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"> 
+                <h3 class="heading">Contact Information</h3>
+                <div class="block-23">
+                  <ul>
+                    <li><span class="icon ion-android-pin"></span><span class="text">Office of International Relations<br>Indian Institute of Technology Kanpur<br>Kanpur, Uttar Pradesh <br>India- 208016</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              
+                <center><div class="col-md-12 text-center copyright">
+                    <!-- <h3 class="heading">Social Links</h3> -->
+                  <p >
+                    <a href="https://www.facebook.com/oiriitk/" class="fa fa-facebook fa-2x p-3"></a>
+                    <a href="https://twitter.com/iitkanpur?lang=en" class="fa fa-twitter fa-2x p-3"></a>
+                    <a href="https://www.linkedin.com/in/iitkanpur1/?fbclid=IwAR2SwSxwchhozS5fSZaBxlCj3m9FBkxKQb1YuA2ngUeiFIJktUOx5xTiUzA" class="fa fa-linkedin fa-2x p-3"></a>
+                    <a href="https://www.instagram.com/iit.kanpur/" class="fa fa-instagram fa-2x p-3"></a>
+                  </p>
+                </div></center>
+              
+            </div>
+          </footer>
+      </div>
+    <!-- END footer -->
+    
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    <script>
+      $(document).ready(function(){
+          /* Get iframe src attribute value i.e. YouTube video url
+          and store it in a variable */
+          var url = $("#cartoonVideo").attr('src');
+          
+          /* Assign empty url value to the iframe src attribute when
+          modal hide, which stop the video playing */
+          $("#myModal").on('hide.bs.modal', function(){
+              $("#cartoonVideo").attr('src', '');
+          });
+          
+          /* Assign the initially stored url back to the iframe src
+          attribute when modal is displayed again */
+          $("#myModal").on('show.bs.modal', function(){
+              $("#cartoonVideo").attr('src', url);
+          });
+      });
+      </script>
+    <script>
+      
+      var flag =0;
+        function openNav() {
+          document.getElementById("mynewspanel").style.width = "250px";
+          if(flag ==1){
+            document.getElementById("mynewspanel").style.width = "0";
+            flag =0;
+          }
+          else flag =1;
+        }
+        //=====================================================================================
+      </script>
+    <script>
+
+      const nav = document.querySelector('#navigation')
+      const section = document.querySelector('#display')
+
+      let observer = new IntersectionObserver(function (entries,observer) {
+        entries.forEach(entry => {
+          console.log(entry.target)
+          if(!entry.isIntersecting) {
+            nav.classList.remove('navigation--transparent')
+            nav.classList.add('navigation')
+          }
+          if(entry.isIntersecting) {
+            nav.classList.add('navigation--transparent')
+            nav.classList.remove('navigation')
+          }
+        })
+      }, {rootMargin: '-300px'});
+ 
+      observer.observe(display);
+
+    </script>
+    <script>
+      window.onscroll = function() {myFunction()};
+      console.log(window.onscroll);
+      // Get the navbar
+      var navbar = document.getElementsByClassName("wrapper");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      console.log(sticky);
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+    <script src="js/bouncer.js"></script>
+    <script src="main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom/navigation.js"></script>
+ 
+  </body>
+</html>
