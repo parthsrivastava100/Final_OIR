@@ -48,6 +48,44 @@
         margin: 0 auto;
         display: block;
     }
+
+        	#main1
+    	{
+    		background-color: #ADD8E6
+    	}
+    	.flipper
+    	{
+    		background-color: #ADD8E6
+    	}
+    	#thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+.head { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
+.cmps{
+	color:;
+}
+.grow {
+  padding: 5px 5px 5px 5px;
+  border-radius:10px;
+    height: 50px; 
+    width: 22%; 
+    margin: 5px 1% 5px 1%; 
+    float: left; 
+    position: relative; 
+    transition:height 0.5s; 
+    -webkit-transition:height 0.5s; 
+    text-align: center;
+
+}
+.grow:hover {
+    height: 115px; /* This is the height on hover */
+}
     </style>
   </head>
 
@@ -352,7 +390,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 element-animate">
           <div class="col-md-7 text-center section-heading">
-            <h2 class="text-primary heading">More about us</h2>
+            <h1 class="text-primary heading" class="grow" >More about us</h2>
             <p></p>
           </div>
         </div>
@@ -362,7 +400,7 @@
 
             <div class="block-20 ">
               <figure>
-                <a href="faculty-staff-campus-life.html" target="_blank"><img src="images/facultyB.jpg" alt="" class="img-fluid"></a>
+                <a href="faculty-staff-campus-life.html" target="_blank"><img src="images/facultyB.jpg" alt="" class="img-fluid"  id="thumbnail" ></a>
               </figure>
               <div class="text">
                 <h3 class="heading"><a href="faculty-staff-campus-life.html" target="_blank">Faculty Staff and Campus Life</a></h3>
@@ -377,10 +415,10 @@
             
             <div class="block-21 d-flex mb-4">
               <figure class="mr-3">
-                <a href="maps.html" target="_blank"><img src="images/cmap.gif" alt="" class="img-fluid"></a>
+                <a href="maps.html" target="_blank"><img src="images/cmap.gif" alt="" class="img-fluid" id="thumbnail" ></a>
               </figure>
-              <div class="text">
-                <h3 class="heading"><a href="maps.html" target="_blank">Campus Maps</a></h3>
+              <div >
+                <h3 class="cmps" ><a href="maps.html" target="_blank"><b>Campus Maps</b></a></h3>
                 <div class="meta">
                 <div class ="text">IIT Kanpur </div>
                 </div>
@@ -389,10 +427,10 @@
 
             <div class="block-21 d-flex mb-4">
               <figure class="mr-3">
-                <a href="final_draft_IR_Brochure.pdf" target="_blank"><img src="images/brochure.jpg" alt="brochure" class="img-fluid" ></a>
+                <a href="final_draft_IR_Brochure.pdf" target="_blank"><img src="images/brochure.jpg" alt="brochure" class="img-fluid" id="thumbnail" ></a>
               </figure>
               <div class="text">
-                <h3 class="heading"><a href="final_draft_IR_Brochure.pdf" target="_blank">Brochure</a></h3>
+                <h3 class="cmps"><a href="final_draft_IR_Brochure.pdf" target="_blank">Brochure</a></h3>
                 <div class="meta">
                   <div class = "text">Check out our latest Brochure</div>
                 </div>
@@ -401,10 +439,10 @@
 
             <div class="block-21 d-flex mb-4">
               <figure class="mr-3">
-                <a href="department.html" target="_blank"><img src="images/academics.jpg" alt="" class="img-fluid"></a>
+                <a href="department.html" target="_blank"><img src="images/academics.jpg" alt="" class="img-fluid" id="thumbnail" ></a>
               </figure>
               <div class="text">
-                <h3 class="heading"><a href="department.html" target="_blank">Academics</a></h3>
+                <h3 class="cmps"><a href="department.html" target="_blank">Academics</a></h3>
                 <div class="meta">
                   <div class = "text">Explore the various disciplines offered at IIT Kanpur</div>
                 </div>
@@ -413,10 +451,10 @@
 
             <div class="block-21 d-flex mb-4">
               <figure class="mr-3">
-                <a href="Contact/contact_us.html" target="_blank"><img src="images/contact.jpg" alt="" class="img-fluid"></a>
+                <a href="Contact/contact_us.html" target="_blank"><img src="images/contact.jpg" alt="" class="img-fluid" id="thumbnail" ></a>
               </figure>
               <div class="text">
-                <h3 class="heading"><a href="Contact/contact_us.html" target="_blank">Contact Us</a></h3>
+                <h3 class="cmps"><a href="Contact/contact_us.html" target="_blank">Contact Us</a></h3>
                 <div class="meta">
                   <div class = "text">We are there for you !</div>
                 </div>
@@ -427,6 +465,7 @@
         </div>
       </div>
     </div>
+
 
            <!-- NEWS -->
            <div class="container my-4">
