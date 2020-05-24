@@ -203,10 +203,12 @@
                                 <template v-for="out in brr">
                                   <tr>
                                    <td style="padding:2px;">
-                                     <button class="collapsible">{{out.c}}  ||  {{out.e}}</button>
-                                     <div class="content">
-                                       <p style="text-align: justify;">{{out.d}}</p>
-                                     </div>
+                                     <button class="collapsible" @click="out.t = !out.t">{{out.c}}  ||  {{out.e}}</button>
+                                     <transition name="fade">
+                                     	<div class="content" v-if="out.t">
+                                       		<p style="text-align: justify;">{{out.d}}</p>
+                                     	</div>
+                                 	</transition>
                                    </td>
                                  </tr>
                                 </template>
@@ -218,10 +220,12 @@
                               <template v-for="out in arr">
                                 <tr>
                                  <td style="padding:2px;">
-                                   <button class="collapsible">{{out.a}}</button>
-                                   <div class="content">
-                                     <p style="text-align: justify;">{{out.b}}</p>
-                                   </div>
+                                   <button class="collapsible" @click="out.t = !out.t">{{out.a}}</button>
+                                   <transition name="fade">
+                                     	<div class="content" v-if="out.t">
+                                       		<p style="text-align: justify;">{{out.b}}</p>
+                                     	</div>
+                                 	</transition>
                                  </td>
                                </tr>
                               </template>

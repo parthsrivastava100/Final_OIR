@@ -1,12 +1,10 @@
 new Vue({
     el:'#prog',
     data() {
-        return {
-           
-      arr:[],
-      brr:[],
-            
-        }
+      return {     
+        arr:[],
+        brr:[],    
+      }
     },
     mounted() {
         var firebaseConfig = {
@@ -28,7 +26,8 @@ new Vue({
             querySnapshot.forEach(function(doc){
                 var a=(doc.data().title);
                 var b=(doc.data().content);
-               var ou={a,b};
+                var t=false;
+               var ou={a,b,t};
      
                 thiss.arr.push(ou);
             })
@@ -38,7 +37,8 @@ new Vue({
                 var c=(doc.data().title);
                 var d=(doc.data().content);
                 var e=(doc.data().deadline);
-               var bu={c,d,e};
+                var t=false;
+               var bu={c,d,e,t};
               
                 thiss.brr.push(bu);
             })

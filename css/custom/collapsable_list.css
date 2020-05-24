@@ -12,15 +12,13 @@
 }
 
 .active, .collapsible:hover {
-  background-color: #41b7e6;;
+  background-color: #41b7e6;
 }
 
 .content {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 .collapsible:after {
   content: '\26AB'; /* Unicode character for "plus" sign (+) */
@@ -32,4 +30,11 @@
 
 .active:after {
   content: "\26AB"; /* Unicode character for "minus" sign (-) */
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
