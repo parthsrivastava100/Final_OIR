@@ -3,12 +3,12 @@
   color: white;
   cursor: pointer;
   padding: 5px;
-  width: 1000;
+  width: 700px;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 .active, .collapsible:hover {
