@@ -42,18 +42,14 @@ phone:phone,
 sub:sub,
 mess:mess
 };
-ur='http://192.168.43.213:3000/send_mail'
-bd=JSON.stringify(bd);
-fetch( ur, {
-  method: 'POST', // or 'PUT'
-  body: bd,
-})
-.then(response => response.json())
-.then(data => {
-  console.log('Success:', data);
+ur=`https://us-central1-mailer-64d8d.cloudfunctions.net/sendMail5?fname=${fname}&lname=${lname}&phone=${phone}&sub=${sub}&mess=${mess}`;
+
+fetch(ur)
+.then((response) => {
+  alert('Email Sent');
 })
 .catch((error) => {
-  console.error('Error:', error);
-});
+  alert('Error');
+})
 
 }

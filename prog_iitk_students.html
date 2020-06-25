@@ -137,12 +137,12 @@
                 <div class="row">
                   <class class="col-md-10 order-md-2">
                     <h2 style="color:rgb(65, 183, 230);" class="mb-5">Programs For IITK students</h2>
-
-                    <div class="row mb-5">
-                      <div class="col-sm-3">
-                        <p style="font-size: 18px;"><b>Joint Degree Programme</b></p>
-                      </div>
-                      <div class="col-sm-9">
+                    <br/>
+                    <div class="col-mb-5">
+                      <div class="col-md-12">
+                        <p ><b style="font-size: 32px;color: black;margin-left: -12px;">Joint Degree Programme </b></p>
+                      </div><br/>
+                      <div class="col-sm-9" style="margin-left: -12px;">
                         <div class="table-responsive">
                           <table class="table table-striped">
                             <tr>
@@ -190,20 +190,20 @@
                       </div>
                     </div>
                     <div class="row mb-5">
-                        <div class="col-sm-3">
-                          <p style="font-size: 18px;"><b>Student Exchange Programme</b></p>
+                        <div class="col-md-7">
+                          <p style="font-size: 18px;"><b style="font-size: 32px;color: black;">Student Exchange Programme</b></p>
                         </div>
                         <div>
                         <div class="col-sm-9">
                           <div class="table-responsive" style="width:700px">
-                            <h3>Newer Programs</h3>
+                            <h5>Newer Programs</h5>
                             <div id="prog">
                             <table class="table table-striped">
                               <div id="prog">
                                 <template v-for="out in brr">
                                   <tr>
                                    <td style="padding:2px;">
-                                     <button class="collapsible" @click="out.t = !out.t">{{out.c}}  ||  {{out.e}}</button>
+                                  <button class="collapsible" @click="out.t = !out.t">{{out.c}}  ||  {{out.e}}</button>
                                      <transition name="fade">
                                      	<div class="content" v-if="out.t">
                                        		<p style="text-align: justify;">{{out.d}}</p>
