@@ -3,7 +3,8 @@ new Vue({
     data() {
       return {     
         arr:[],
-        brr:[],    
+        brr:[],
+        crr:[]    
       }
     },
     mounted() {
@@ -41,6 +42,17 @@ new Vue({
                var bu={c,d,e,t};
               
                 thiss.brr.push(bu);
+            })
+          })
+          db.collection('cov').get().then(function(querySnapshot){
+            querySnapshot.forEach(function(doc){
+                var c=(doc.data().title);
+                var d=(doc.data().description);
+                var e=(doc.data().deadline);
+                var t=false;
+               var bu={c,d,e,t};
+              
+                thiss.crr.push(bu);
             })
           })
     }

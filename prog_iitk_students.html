@@ -200,6 +200,18 @@
                             <div id="prog">
                             <table class="table table-striped">
                               <div id="prog">
+                                <template v-for="out in crr">
+                                  <tr>
+                                   <td style="padding:2px;">
+                                  <button class="collapsible" @click="out.t = !out.t">{{out.c}}  ||  {{out.e}}</button>
+                                     <transition name="fade">
+                                     	<div class="content" v-if="out.t">
+                                       		<p style="text-align: justify;">{{out.d}}</p>
+                                     	</div>
+                                 	</transition>
+                                   </td>
+                                 </tr>
+                                </template>
                                 <template v-for="out in brr">
                                   <tr>
                                    <td style="padding:2px;">
